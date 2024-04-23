@@ -1,0 +1,28 @@
+.wrapper-subimg {
+  width: calc(100% - 24px);
+  display: flex;
+  position: relative;
+}
+.wrapper-subimg > img {
+  border: 1px solid rgb(255 216 64 / 17%);
+}
+.wrapper-arrow {
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn__left,
+.btn__right {
+  border: none;
+  background: rgba(0, 0, 0, 0.1);
+  height: 72px;
+  width: 12.5%;
+}
+.wrapper-info {
+  padding: 20px;
+  font-size: 14px;
+}

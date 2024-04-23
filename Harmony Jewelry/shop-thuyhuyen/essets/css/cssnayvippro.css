@@ -1,0 +1,35 @@
+.wrapper-comment {
+  width: 100%;
+}
+
+.comment-item {
+  display: flex;
+  gap: 8px;
+  padding: 16px;
+}
+
+.comment-item-left > div > img {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.comment-item-img {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.comment-item-img > div {
+  border: solid 2px orange;
+  border-radius: 8px;
+}
+
+.comment-item-img > div > img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: inherit;
+}

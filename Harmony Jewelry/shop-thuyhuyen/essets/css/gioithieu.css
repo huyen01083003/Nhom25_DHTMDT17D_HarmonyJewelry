@@ -1,0 +1,203 @@
+body {
+    height: 1020x;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slide-show {
+    width: 900px;
+    overflow: hidden;
+    position: relative;
+}
+.list-images {
+    display: flex;
+   transition: 0.5s;
+}
+.btn:hover {
+    color: white;
+}
+.btn {
+    font-size: 30px;
+    color: #999;
+    position: absolute;
+    top: 50;
+    transform: translateY(-50%);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.btn-left {
+    left: 0;
+}
+.btn-right {
+    right: 0;
+}
+.index-images {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.index-item {
+    border: 2px solid #999;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 50%;
+}
+.active {
+    background-color: #999;
+}
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    padding: 10px 15px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+/* Main */
+main {
+    padding: 40px 0;
+}
+
+section {
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+h2 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Home */
+#home {
+    text-align: center;
+}
+
+.home-banner {
+    position: relative;
+}
+
+.home-banner img {
+    width: 100%;
+}
+
+.home-banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.home-banner-text h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.home-banner-text p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.home-banner-text a {
+    padding: 15px 25px;
+    background-color:rgba(238, 75, 43, 0.9);
+    color: #fff;
+    border-radius: 10px;
+}
+
+/* Sản phẩm */
+.san-pham-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.san-pham {
+    width: 300px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.san-pham img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.san-pham h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.san-pham a {
+    padding: 10px 10px;
+    background-color: rgba(238, 75, 43, 0.9);
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #eee;
+    padding: 20px 0;
+    text-align: center;
+}

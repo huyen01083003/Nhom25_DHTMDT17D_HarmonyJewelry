@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
+    <title>Harmory</title>
+    <link rel="stylesheet" href="./essets/css/base.css">
+    <link rel="stylesheet" href="./essets/css/main.css">
+    <link rel="stylesheet" href="./essets/css/grid.css">
+
+    <link rel="stylesheet" href="./essets/css/detail.css">
+    <link rel="stylesheet" href="./essets/css/cssnayvippro.css">
+    <!-- Google tag (gtag.js) -->
+
+
+    <style>
+        .avatar {
+            border-radius: 50%;
+            display: block;
+            height: 30%;
+            left: 0;
+            top: 0;
+            width: 30%;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid wide">
+                <nav class="navbar hide-on-mobile-tablet">
+                    <ul class="navbar__list">
+
+                    </ul>
+                    <ul class="navbar__list">
+                        <li class="navbar__item navbar__item--has-notify">
+                            <a href="#" class="navbar__item-link">
+                                <i class="navbar__icon far fa-bell"></i>
+                                Thông báo
+                            </a>
+                            <!-- Header notification -->
+                            <div class="notify">
+                                <header class="notify__header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+
+                                <footer class="notify__footer">
+                                    <a href="" class="notify__footer-btn">Xem tất cả</a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#" class="navbar__item-link">
+                                <i class="navbar__icon far fa-question-circle"></i>
+                                Trợ giúp
+                            </a>
+                        </li>
+                        <!-- <li class="navbar__item navbar__item--blod navbar__item--separate">Đăng ký</li>
+                        <li class="navbar__item navbar__item--blod">Đăng nhập</li> -->
+                        <li class="navbar__item navbar-user">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCeJP59ujnPLRrSKjKOOO9vtTWSMD3Jmx9SpjXDJD7uA&s"
+                                alt="" class="navbar__item-avatar">
+                            <span class="navbar-user-name">Tôi</span>
+                            <ul class="navbar-user-menu">
+                                <li class="navbar-user-item ">
+                                    <a href="">Tài khoản của tôi</a>
+                                </li>
+                                <li class="navbar-user-item">
+                                    <a href="">Địa chỉ của tôi</a>
+                                </li>
+                                <li class="navbar-user-item">
+                                    <a href="">Đơn mua</a>
+                                </li>
+                                <li class="navbar-user-item navbar-user-item--separate">
+                                    <a href="">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Header with search -->
+                <div class="header-with-search">
+                    <label for="mobile-search-checkbox" class="header__mobile-search">
+                        <i class="header__mobile-search-icon fas fa-search"></i>
+                    </label>
+                    <div class="header__logo">
+                        <a href="index.html" class="header__logo-link">
+                            <img class="header__logo-img" src="./essets/images/logoXoaPhong.png" alt="Logo Shop">
+                        </a>
+                    </div>
+
+                    <div class="header__search hide-on-mobile">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm">
+                            <!-- search history -->
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="">kim cương</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Đá quý</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="header__search-select">
+                            <span class="header__search-select-lable">Trong shop</span>
+                            <i class="header__search-select-icon fas fa-chevron-down"></i>
+                            <ul class="header__search-option">
+                                <li class="header__search-option-item header__search-option-item--ative">
+                                    <span>Trong shop</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                                <li class="header__search-option-item ">
+                                    <span>Ngoài shop</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fas fa-search"></i>
+                        </button>
+                    </div>
+                    <!-- Cart layout -->
+                    <div class="header__cart">
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fas fa-cart-plus"></i>
+                            <!-- Has cart: header_cart-list--has-cart -->
+                            <span class="header__cart-notice">3</span>
+                            <!-- No cart: header__cart-list--no-cart -->
+                            <div class="header__cart-list">
+                                <img src="" alt="" class="header__cart-no-cart-img">
+                                <span class="header__cart-list-no-cart-msg">
+                                    Chưa có sản phẩm
+                                </span>
+
+                                <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                                <ul class="header__cart-list-item">
+                                    <!-- Cart item -->
+                                    <li class="header__cart-item">
+                                        <img src="https://product.hstatic.net/1000112469/product/btptb381_6_c11e466e039d436fabfa1586300302b0.png"
+                                            alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name"> <a
+                                                        style="text-decoration: none; color: black;"
+                                                        href="./detail.html"> Bông
+                                                        tai BTPTB
+                                                        381</a></h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">119.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">Phân loại: xịn</span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://product.hstatic.net/1000112469/product/bt436_5556fed0eabe4e5fb0d3655c4b565e0e.png"
+                                            alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name"> <a
+                                                        style="text-decoration: none; color: black;" href="436.html">
+                                                        Bông
+                                                        tai PT 436</a></h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">475.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">Phân loại: có dây</span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://product.hstatic.net/1000112469/product/dcmamd773_6_4107d61af9f147a49fb99344c45c57f2.png"
+                                            alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name"> <a
+                                                        style="text-decoration: none; color: black;" href="773.html">
+                                                        Bông
+                                                        Dây chuyền DCMAMD 773</a></h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">368.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">Phân loại: ok</span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <a href="thanhtoan.html" class="header__cart-item-view-item btn btn--primary">Thanh
+                                    toán</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="header-mobile">
+            <ul class="header__sort-bar">
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Liên quan</a>
+                </li>
+                <li class="header__sort-item header__sort-item--active">
+                    <a href="" class="header__sort-link">Mới nhất</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Bán chạy</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Giá</a>
+                </li>
+            </ul>
+            <!-- header search mobile -->
+            <input type="checkbox" hidden id="mobile-search-checkbox" class="header__search-checkbox">
+
+            <div class="header__search-mobile ">
+                <div class="header__search-input-wrap-mobile">
+                    <input type="text" class="header__search-input-mobile" placeholder="Nhập để tìm kiếm sản phẩm">
+                    <!-- search history mobile -->
+                    <div class="header__search-history-mobile">
+                        <h3 class="header__search-history-heading-mobile">Lịch sử tìm kiếm</h3>
+                        <ul class="header__search-history-list-mobile">
+                            <li class="header__search-history-item-mobile">
+                                <a href="">Dây chuyền </a>
+                            </li>
+                            <li class="header__search-history-item-mobile">
+                                <a href="">Bộ Trang Sức </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="header__search-select-mobile">
+                    <span class="header__search-select-lable-mobile">Trong shop</span>
+                    <i class="header__search-select-icon-mobile fas fa-chevron-down"></i>
+                    <ul class="header__search-option">
+                        <li class="header__search-option-item-mobile header__search-option-item-mobile--ative">
+                            <span>Trong shop</span>
+                            <i class="fas fa-check"></i>
+                        </li>
+                        <li class="header__search-option-item-mobile ">
+                            <span>Ngoài shop</span>
+                            <i class="fas fa-check"></i>
+                        </li>
+                    </ul>
+                </div>
+                <button class="header__search-btn-mobile">
+                    <i class="header__search-btn-icon-mobile fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+        <!-- nav bar mobile -->
+        <div class="nav-bar-mobile">
+
+        </div>
+        <div class="app__container">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col c-4">
+                        <div class="wrapper-img">
+
+                            <img style="width: 100%; height: 100%;"
+                                src="https://product.hstatic.net/1000112469/product/btptb381_6_c11e466e039d436fabfa1586300302b0.png"
+                                alt="">
+                        </div>
+                        <div class="wrapper-subimg">
+                            <img style="width: calc(25%  ) ; "
+                                src="https://product.hstatic.net/1000112469/product/btptb381_6_c11e466e039d436fabfa1586300302b0.png"
+                                alt="">
+                            <img style="width: calc(25% ) ;"
+                                src="https://product.hstatic.net/1000112469/product/btptb381_6_c11e466e039d436fabfa1586300302b0.png"
+                                alt="">
+                            <img style="width: calc(25% ) ;"
+                                src="https://product.hstatic.net/1000112469/product/btptb381_6_c11e466e039d436fabfa1586300302b0.png"
+                                alt="">
+                            <img style="width: calc(25% ) ;"
+                                src="https://product.hstatic.net/1000112469/product/btptb381_6_c11e466e039d436fabfa1586300302b0.png"
+                                alt="">
+                            <div class="wrapper-arrow">
+                                <button class="btn__left">
+                                    <i class="fas fa-arrow-left"></i>
+                                </button>
+                                <button class="btn__right">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col c-8">
+                        <div class="wrapper-info">
+                            <p style="font-weight: bold; font-size: 22px;">Bông tai BTPTB 381</p>
+                            <p>Mã sản phẩm: <strong>BTPTB 381 - 14K - Moissanite</strong></p>
+                            <p>Thiết kế độc quyền từ Hamorny</p>
+                            <p style="font-size: 21px;font-weight: bold;color: #E25050">119,000₫</p>
+                            <p>Giá tham khảo, có thể thay đổi theo trọng lượng, size tay và giá vàng theo thời điểm.</p>
+                            <p>Hướng dẫn chọn size</p>
+                            <div>
+                                <div>
+                                    <p style="display: flex; align-items:center ; gap: 16px;">
+                                        <img style="width: 32px;"
+                                            src="https://theme.hstatic.net/1000112469/1000770197/14/icon-policy-custom-1.png?v=4355"
+                                            alt="">
+                                        Đổi miễn phí trong 72 giờ
+                                    </p>
+                                    <p style="display: flex; align-items:center ; gap: 16px;">
+                                        <img style="width: 32px;"
+                                            src="https://theme.hstatic.net/1000112469/1000770197/14/icon-policy-custom-3.png?v=4355"
+                                            alt="">
+                                        Bảo hành trọn đời
+                                    </p>
+                                </div>
+                                <div>
+                                    <p style="display: flex; align-items:center ; gap: 16px;">
+                                        <img style="width: 32px;"
+                                            src="https://theme.hstatic.net/1000112469/1000770197/14/icon-policy-custom-2.png?v=4355"
+                                            alt="">
+                                        Trả góp 0%
+                                    </p>
+                                    <p style="display: flex; align-items:center ; gap: 16px;">
+                                        <img style="width: 32px;"
+                                            src="https://theme.hstatic.net/1000112469/1000770197/14/icon-policy-custom-4.png?v=4355"
+                                            alt="">
+                                        Miễn phí giao hàng toàn quốc
+                                    </p>
+                                </div>
+                            </div>
+
+
+
+                            <button
+                                style="width: 75%; display: block;color: #333333; background-color: white; border: 2px solid #000; padding:  8px 0; cursor: pointer; margin-bottom: 10px; text-transform: uppercase;">
+                                Tìm cửa hàng gần bạn
+                            </button>
+                            <button
+                                style="width: 75%; display: block;color: white; background-color: #333333; border: 2px solid #000; padding:  8px 0; cursor: pointer; text-transform: uppercase;">Mua
+                                ngay</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="wrapper-comment">
+                        <div class="comment-item">
+                            <div class="comment-item-left">
+                                <div>
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFVFcmaTiwLwnPY7Q5zMX1kAameg33VhXunRJ77szEEQ&s"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="comment-item-right">
+                                <p class="comment-item-title" style="font-size: 14px;">thuyhuyen100d</p>
+                                <div class="comment-item-star">
+                                    <i class="fas fa-star" style="color: orange;"></i>
+                                    <i class="fas fa-star" style="color: orange;"></i>
+                                    <i class="fas fa-star" style="color: orange;"></i>
+                                    <i class="fas fa-star" style="color: orange;"></i>
+                                    <i class="fas fa-star" style="color: orange;"></i>
+                                </div>
+                                <p class="comment-item-date" style="color: gray;">2024-04-11 15:14 | Phân loại hàng:
+                                    Xanh riêu,L</p>
+                                <p class="comment-item-content" style="font-size: 16px;">Siêu siêu đẹp ấy mng ơi không còn gì để nóiiii từ lúc nhận cứ ngắm mãi</p>
+                                <div class="comment-item-img">
+                                    <div class="comment-item-img-detail">
+                                        <img src="./essets/images/374.1.webp"
+                                            alt="">
+                                    </div>
+                                    <div class="comment-item-img-detail">
+                                        <img src="./essets/images/436.2.webp"
+                                            alt="">
+                                    </div>
+                                    <div class="comment-item-img-detail">
+                                        <img src="./essets/images/768.3.webp"
+                                            alt="">
+                                    </div>
+                                    <div class="comment-item-img-detail">
+                                        <img src="./essets/images/83.2.webp"
+                                            alt="">
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-item">
+                            <div class="comment-item-left">
+                                <div>
+                                    <img src="https://file.hstatic.net/1000379600/file/chup-anh-2-nguoi-ban-than-miti.vn_62558bb7d1044ca5b3c22fbfa044e276.jpg"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="comment-item-right">
+                                <p class="comment-item-title" style="font-size: 14px;">NguoiTinhMuaDong</p>
+                                <div class="comment-item-star">
+                                    <i class="fas fa-star" style="color: orange;"></i>
+                                    <i class="fas fa-star" style="color: orange;"></i>
+                                    <i class="fas fa-star" style="color: orange;"></i>
+                                    <i class="fas fa-star" style="color: orange;"></i>
+                                    <i class="fas fa-star" style="color: orange;"></i>
+                                </div>
+                                <p class="comment-item-date" style="color: gray;">2024-04-11 15:14 | Phân loại hàng:
+                                    Xanh riêu,L</p>
+                                <p class="comment-item-content" style="font-size: 16px;">Shop giao hàng nhanh. Nhẫn rất đẹp còn được tặng hộp rất nhìn rất sang</p>
+                                <div class="comment-item-img">
+                                    <div class="comment-item-img-detail">
+                                        <img src="./essets/images/83.2.webp"
+                                            alt="">
+                                    </div>
+                                    <div class="comment-item-img-detail">
+                                        <img src="./essets/images/380.webp"
+                                            alt="">
+                                    </div>
+                                    <div class="comment-item-img-detail">
+                                        <img src="./essets/images/436.webp"
+                                            alt="">
+                                    </div>
+                                    <div class="comment-item-img-detail">
+                                        <img src="./essets/images/nhan1.jpg"
+                                            alt="">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-item">
+                            <div class="comment-item-left">
+                                <div>
+                                    <img src="https://i.pinimg.com/736x/6a/6f/ce/6a6fce64964c49ef7f1b2f8a115cf9db.jpg"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="comment-item-right">
+                                <p class="comment-item-title" style="font-size: 14px;">thanhthao123</p>
+                                <div class="comment-item-star">
+                                    <i class="fas fa-star" style="color: orange;"></i>
+                                    <i class="fas fa-star" style="color: orange;"></i>
+                                    <i class="fas fa-star" style="color: orange;"></i>
+                                    <i class="fas fa-star" style="color: orange;"></i>
+                                    <i class="fas fa-star" style="color: orange;"></i>
+                                </div>
+                                <p class="comment-item-date" style="color: gray;">2024-04-11 15:14 | Phân loại hàng:
+                                    Xanh riêu,L</p>
+                                <p class="comment-item-content" style="font-size: 16px;">Siêu xinh lun. M mua đc thêm voucher giảm giá nên vừa rẻ vừa xinh</p>
+                                <div class="comment-item-img">
+                                    <div class="comment-item-img-detail">
+                                        <img src="./essets/images/773.1.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="comment-item-img-detail">
+                                        <img src="./essets/images/bong1.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="comment-item-img-detail">
+                                        <img src="./essets/images/773.webp"
+                                            alt="">
+                                    </div>
+                                    <div class="comment-item-img-detail">
+                                        <img src="./essets/images/380.2.jpg"
+                                            alt="">
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-item">
+                            <div class="comment-item-left">
+                                <div>
+                                    <img src="https://haycafe.vn/wp-content/uploads/2022/03/anh-gai-xinh-vay-xep-ly-ngan-mau-be.jpg"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="comment-item-right">
+                                <p class="comment-item-title" style="font-size: 14px;">thuyhuyen100d</p>
+                                <div class="comment-item-star">
+                                    <i class="fas fa-star" style="color: orange;"></i>
+                                    <i class="fas fa-star" style="color: orange;"></i>
+                                    <i class="fas fa-star" style="color: orange;"></i>
+                                    <i class="fas fa-star" style="color: orange;"></i>
+                                    <i class="fas fa-star" style="color: orange;"></i>
+                                </div>
+                                <p class="comment-item-date" style="color: gray;">2024-04-11 15:14 | Phân loại hàng:
+                                    Xanh riêu,L</p>
+                                <p class="comment-item-content" style="font-size: 16px;">Cái này ngon quá shop ơi
+                                   </p>
+                                <div class="comment-item-img">
+                                    <div class="comment-item-img-detail">
+                                        <img src="./essets/images/436.2.webp"
+                                            alt="">
+                                    </div>
+                                    <div class="comment-item-img-detail">
+                                        <img src="./essets/images/768.1.webp"
+                                            alt="">
+                                    </div>
+                                    <div class="comment-item-img-detail">
+                                        <img src="./essets/images/773.1.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="comment-item-img-detail">
+                                        <img src="./essets/images/773.2.jpg"
+                                            alt="">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="footer">
+            <div class="grid wide footer__content">
+                <div class="row">
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">CÔNG TY TNHH HAMORNY</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Đường Dương Quảng Hàm, phường 5, quận Gò Vấp,
+                                    TP.HCM</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Tư vấn:0963028146(09:00-17:00)</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Mã số thuế:00012345</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">Về Hamorny Jewerly</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="gioithieu.html" class="footer-item__link">Giới thiệu về Hamorny Jewerly</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="tuyendung.html" class="footer-item__link">Tuyển dụng</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="gioithieu.html" class="footer-item__link">Điều khoản Shop</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">Chính sách</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="baohanh.html" class="footer-item__link">Chính sách bảo hành</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="giaohang.html" class="footer-item__link">Chính sách giao hàng</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Chính sách đổi trả</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">Kết nối với chúng tôi </h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="https://web.facebook.com/huythanhjewelry" class="footer-item__link">
+                                    <i class="footer-item__icon fab fa-facebook"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="https://www.instagram.com/huythanhjew/" class="footer-item__link">
+                                    <i class="footer-item__icon fab fa-instagram"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="https://www.tiktok.com/@huythanhjewelry" class="footer-item__link">
+                                    <i class="footer-item__icon fab fa-tiktok"></i>
+                                    Tiktok
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-8 c-12 ">
+                        <h3 class="footer__heading">Vào cửa hàng bằng ứng dụng</h3>
+                        <div class="footer__download">
+
+                            <div class="footer__download-apps">
+                                <a href="" class="footer__download-apps-link">
+                                    <img src="data:image/png;base64,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"
+                                        alt="google-play-download" class="footer__download-apps-img">
+                                    GOOGLE PLAY
+                                </a>
+                                <a href="" class="footer__download-apps-link">
+                                    <img src="data:image/jpeg;base64,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"
+                                        alt="app-store-download" class="footer__download-apps-img">
+                                    APP STORE
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="grid wide">
+            <p class="footer__text">© 2024 - Bản quyền thuộc về công ty Harmory</p>
+        </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

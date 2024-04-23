@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./essets/css/dangnhap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+</head>
+<body>
+   
+    <div class="auth-wrapper"> <!--chứa toàn bộ nội dung của form -->
+        <div class="auth-container"><!--chứa các phần tử con của form -->
+            <div class="auth-action-left"><!--chứa nội dung form đăng nhập -->
+                <div class="auth-form-outer"><!-- bao ngoài form -->
+                    <h2 class="auth-form-title">
+                        Đăng nhập
+                    </h2>
+                
+                    <form class="login-form">
+                        <input type="email" class="auth-form-input" placeholder="Email"><!--nhập liệu email-->
+                        <div class="input-icon">
+                            <input type="password" class="auth-form-input" placeholder="Password">
+                            <i class="fa fa-eye show-password"></i>
+                        </div>
+                        <label class="btn active">
+                            <input type="checkbox" name='email1' checked> 
+                            <i class="fa fa-square-o"></i><i class="fa fa-check-square-o"></i> <!--biểu tượng ô checkbox -->
+                            <span> Ghi nhớ mật khẩu</span><!--chú thích -->
+                        </label>
+                        <div class="auth-external-container">
+                            <p class="auth-sgt">Hoặc đăng nhập bằng:</p>
+                            <div class="auth-external-list">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-google"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                        <div class="footer-action"><!-- Phần tử chứa các tùy chọn phía dưới form -->
+                            <a href="index.html" class="auth-btn-direct">Đăng nhập</a>
+                            <a href="dangky.html" class="auth-btn-direct">Đăng ký</a>
+                        </div>
+                    </form>
+                    <div class="auth-forgot-password"><!-- Phần tử chứa liên kết quên mật khẩu -->
+                        <a href="#">Quên mật khẩu</a>
+                    </div>
+                </div>
+            </div>
+            <div class="auth-action-right"><!-- Phần tử chứa hình ảnh bên phải của form đăng nhập -->
+                <div class="auth-image">
+                    <img style="width: 100%; object-fit: cover;" src="./essets/images/logocut.jpg" alt="login">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./essets/js/common.js"></script>
+</body>
+</html>

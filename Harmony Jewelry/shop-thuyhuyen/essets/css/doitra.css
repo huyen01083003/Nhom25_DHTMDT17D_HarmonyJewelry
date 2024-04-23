@@ -1,0 +1,41 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #fffffe;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #1d1d1d;
+    padding: 8px;
+  }
+  
+  th {
+    text-align: left;
+    background-color: #fa952a;
+  }
+  
+  .table td p {
+    margin-bottom: 0;
+  }
+  
